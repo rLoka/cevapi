@@ -1,0 +1,17 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar {
+    margin-bottom: 2rem;
+}
+
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #444;
+}
+
+#countdown {
+    font-size: 3rem;
+}

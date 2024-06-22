@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ćevapi Thursdays</title>
+    <title>Countdown - Ćevapi Thursdays</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -25,17 +25,29 @@
                     <a class="nav-link" href="restaurants.html">Restaurants</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="countdown.html">Countdown</a>
-                </li>              
+                    <a class="nav-link" href="countdown.html">Countdown</a>
+                </li>
             </ul>
         </div>
     </nav>
     <div class="container text-center mt-5">
-        <h1>Welcome to Ćevapi Thursdays!</h1>
-        <p class="lead">Join us every Thursday for the best Ćevapi in town.</p>
+        <h1>Countdown to Next Ćevapi Thursday</h1>
+        <p class="lead">Time remaining until next Thursday at 12:00 PM Zagreb time:</p>
+        <div id="countdown" class="display-4"></div>
+        <div class="mt-4">
+            <label for="timezoneSelect">Select Time Zone:</label>
+            <select id="timezoneSelect" class="custom-select w-auto">
+                <option value="Europe/Zagreb" selected>Europe/Zagreb (CET)</option>
+                <option value="Europe/London">Europe/London (GMT)</option>
+                <option value="America/New_York">America/New_York (EST)</option>
+                <option value="Asia/Tokyo">Asia/Tokyo (JST)</option>
+                <!-- Add more timezones as needed -->
+            </select>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-timezone-with-data.min.js"></script>
+    <script src="assets/js/countdown.js"></script>
 </body>
 </html>
